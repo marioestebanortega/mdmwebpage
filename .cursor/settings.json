@@ -1,0 +1,26 @@
+{
+    "rules": {
+        "enabled": true,
+        "rulesDirectory": ".cursor/rules",
+        "rules": [
+            {
+                "name": "mdm-style",
+                "description": "Estilo visual profesional y corporativo para MDM Innovations",
+                "globs": ["*.html", "*.css", "*.js"],
+                "alwaysApply": true
+            },
+            {
+                "name": "mdm-structure",
+                "description": "Estructura base de las páginas web del sitio de MDM Innovations",
+                "globs": ["*.html"],
+                "alwaysApply": true
+            },
+            {
+                "name": "mdm-branding",
+                "description": "Regla para mantener consistencia de marca y lenguaje en todo el sitio",
+                "globs": ["*.html"],
+                "alwaysApply": false
+            }
+        ]
+    }
+} 

@@ -1,0 +1,160 @@
+---
+description: Regla para mantener consistencia de marca y lenguaje en todo el sitio
+globs:
+  - "*.html"
+alwaysApply: false
+---
+
+# Guía de Marca y Lenguaje MDM Innovations
+
+## Identidad de Marca
+
+### Nombre y Lema
+- Nombre oficial: **MDM Innovations**
+- Lema: "Transformamos ideas en inteligencia"
+- Uso consistente en todo el contenido
+- No usar variaciones o abreviaciones
+
+### Tono de Voz
+- Profesional y confiable
+- Innovador y visionario
+- Claro y directo
+- Orientado a soluciones
+
+## Áreas de Especialización
+
+### Inteligencia Artificial
+- Consultoría en IA
+- Implementación de soluciones IA
+- Transformación digital
+- Automatización inteligente
+
+### Tecnologías Clave
+- RAG (Retrieval Augmented Generation)
+- Machine Learning
+- Procesamiento de Lenguaje Natural
+- Automatización de Procesos
+
+## Guía de Contenido
+
+### Títulos y Encabezados
+```html
+<!-- Ejemplos de títulos -->
+<h1>Transformación Digital con IA</h1>
+<h2>Soluciones de Inteligencia Artificial</h2>
+<h3>Consultoría en Implementación IA</h3>
+```
+
+### Descripciones de Servicios
+```html
+<!-- Estructura recomendada -->
+<div class="service-description">
+    <h3>[Nombre del Servicio]</h3>
+    <p>[Beneficio principal] mediante [tecnología/solución] para [resultado específico].</p>
+    <ul>
+        <li>[Característica clave 1]</li>
+        <li>[Característica clave 2]</li>
+        <li>[Característica clave 3]</li>
+    </ul>
+</div>
+```
+
+### Palabras Clave
+- Transformación digital
+- Inteligencia artificial
+- Automatización
+- Innovación
+- Eficiencia
+- Productividad
+- Soluciones IA
+- Consultoría tecnológica
+
+### Frases a Evitar
+- "La mejor empresa"
+- "Únicos en el mercado"
+- "Revolucionario"
+- "Cambio total"
+- Superlativos exagerados
+
+## Estructura de Mensajes
+
+### Propuesta de Valor
+```html
+<!-- Estructura recomendada -->
+<div class="value-proposition">
+    <h2>[Problema que resolvemos]</h2>
+    <p>[Nuestra solución]</p>
+    <p>[Beneficio tangible]</p>
+</div>
+```
+
+### Casos de Uso
+```html
+<!-- Estructura recomendada -->
+<div class="use-case">
+    <h3>[Industria/Sector]</h3>
+    <p>[Desafío específico]</p>
+    <p>[Solución implementada]</p>
+    <p>[Resultados obtenidos]</p>
+</div>
+```
+
+## Elementos Visuales
+
+### Colores de Marca
+```css
+:root {
+    --primary-color: #1a365d;    /* Azul corporativo */
+    --secondary-color: #2b6cb0;  /* Azul medio */
+    --accent-color: #4299e1;     /* Azul brillante */
+}
+```
+
+### Tipografía
+```css
+body {
+    font-family: 'Inter', sans-serif;
+}
+```
+
+## Ejemplos de Contenido
+
+### Hero Section
+```html
+<div class="hero-content">
+    <h1>Transformación Digital con IA</h1>
+    <p>Impulsamos la innovación empresarial mediante soluciones de inteligencia artificial personalizadas.</p>
+</div>
+```
+
+### Descripción de Servicios
+```html
+<div class="service">
+    <h3>Consultoría en IA</h3>
+    <p>Guiamos a tu empresa en la implementación de soluciones de inteligencia artificial, desde la estrategia hasta la ejecución.</p>
+</div>
+```
+
+### Llamadas a la Acción
+```html
+<a href="#contacto" class="cta-button">Inicia tu Transformación Digital</a>
+```
+
+## Checklist de Contenido
+
+### Antes de Publicar
+- [ ] Nombre de empresa correcto
+- [ ] Lema incluido
+- [ ] Tono profesional
+- [ ] Enfoque en IA y transformación
+- [ ] Sin superlativos exagerados
+- [ ] Mensaje claro y directo
+- [ ] Beneficios tangibles
+- [ ] Llamadas a la acción claras
+
+### Revisión de Marca
+- [ ] Consistencia en terminología
+- [ ] Alineación con valores de marca
+- [ ] Mensaje coherente
+- [ ] Propuesta de valor clara
+- [ ] Enfoque en soluciones 

@@ -1,0 +1,138 @@
+---
+description: Estructura base de las páginas web del sitio de MDM Innovations
+globs:
+  - "*.html"
+alwaysApply: true
+---
+
+# Estructura Base de Páginas MDM Innovations
+
+## Estructura HTML Requerida
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta tags esenciales -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="[Descripción específica de la página]">
+    <title>MDM Innovations - [Título de la página]</title>
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header: Navegación principal -->
+    <header class="header">
+        <!-- Contenido del header -->
+    </header>
+
+    <main>
+        <!-- Sección de Bienvenida -->
+        <section id="bienvenida" class="hero">
+            <!-- Contenido de bienvenida -->
+        </section>
+
+        <!-- Catálogo de Servicios -->
+        <section id="servicios" class="services">
+            <!-- Lista de servicios -->
+        </section>
+
+        <!-- Sobre Nosotros -->
+        <section id="acerca" class="about">
+            <!-- Información de la empresa -->
+        </section>
+
+        <!-- Formulario de Contacto -->
+        <section id="contacto" class="contact">
+            <!-- Formulario -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Información de contacto y enlaces -->
+    </footer>
+</body>
+</html>
+```
+
+## Reglas de Estructura
+
+### 1. Secciones Obligatorias
+- Header con navegación
+- Sección de bienvenida (hero)
+- Catálogo de servicios
+- Sección "Sobre Nosotros"
+- Formulario de contacto
+- Footer
+
+### 2. Compatibilidad Estática
+- No usar JavaScript
+- No usar frameworks
+- No usar bases de datos
+- No usar procesamiento del lado del servidor
+- Compatible con GitHub Pages y Netlify
+
+### 3. Comentarios HTML
+```html
+<!-- 
+    SECCIÓN: [Nombre de la sección]
+    DESCRIPCIÓN: [Breve descripción del propósito]
+    COMPONENTES:
+    - [Lista de componentes principales]
+    - [Elementos clave]
+    ÚLTIMA ACTUALIZACIÓN: [Fecha]
+-->
+```
+
+### 4. Estructura de Archivos
+```
+/
+├── index.html
+├── styles.css
+├── images/
+│   ├── hero/
+│   ├── services/
+│   └── about/
+└── assets/
+    └── icons/
+```
+
+### 5. Convenciones de Nombrado
+- IDs: kebab-case (ej: `servicio-ia`)
+- Classes: kebab-case (ej: `service-card`)
+- Imágenes: descriptivo-kebab-case.jpg
+- Secciones: nombres en español
+
+### 6. Accesibilidad
+- Estructura semántica HTML5
+- Roles ARIA cuando sea necesario
+- Alt text en imágenes
+- Enlaces descriptivos
+
+### 7. SEO
+- Meta tags completos
+- Estructura de encabezados (h1-h6)
+- URLs amigables
+- Sitemap.xml
+
+### 8. Performance
+- Optimización de imágenes
+- CSS minificado
+- Lazy loading de imágenes
+- Caché del navegador
+
+### 9. Mantenimiento
+- Comentarios descriptivos
+- Estructura consistente
+- Nombres significativos
+- Documentación inline
+
+### 10. Validación
+- HTML válido (W3C)
+- CSS válido
+- Accesibilidad (WCAG 2.1)
+- Performance (Lighthouse) 

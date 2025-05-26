@@ -1,0 +1,135 @@
+---
+description: Estilo visual profesional y corporativo para MDM Innovations
+globs:
+  - "*.html"
+  - "*.css"
+  - "*.js"
+alwaysApply: true
+---
+
+# Guía de Estilo MDM Innovations
+
+## Principios de Diseño
+- El diseño debe estar inspirado en sitios de firmas como McKinsey, BCG, Deloitte y Accenture
+- Proyectar prestigio, inteligencia estratégica y liderazgo en IA
+- Mantener un balance entre innovación y profesionalismo
+- Enfocarse en la experiencia del usuario y la claridad del mensaje
+
+## Paleta de Colores
+```css
+:root {
+    /* Colores principales */
+    --primary-color: #1a365d;    /* Azul corporativo profundo */
+    --secondary-color: #2b6cb0;  /* Azul medio */
+    --accent-color: #4299e1;     /* Azul brillante */
+    
+    /* Colores neutros */
+    --text-color: #2d3748;       /* Gris oscuro para texto */
+    --text-light: #718096;       /* Gris medio para subtítulos */
+    --background-light: #f7fafc; /* Gris muy claro para fondos */
+    --white: #ffffff;
+    
+    /* Colores de acento */
+    --accent-purple: #6b46c1;    /* Púrpura para elementos destacados */
+    --accent-teal: #319795;      /* Verde azulado para elementos secundarios */
+}
+```
+
+## Tipografía
+```css
+/* Fuentes principales */
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+```
+
+## Imágenes y Visuales
+- Utilizar imágenes de alta resolución (mínimo 1920x1080px)
+- Preferir fotografías que muestren:
+  - Equipos diversos trabajando en entornos modernos
+  - Tecnología avanzada y centros de datos
+  - Liderazgo y colaboración
+  - Espacios de trabajo innovadores
+- Evitar imágenes genéricas o de stock de baja calidad
+- Mantener consistencia en el estilo fotográfico
+
+## Layout y Estructura
+- Diseño limpio y espacioso
+- Márgenes y padding generosos
+- Uso de grid y flexbox para alineaciones precisas
+- Secciones bien definidas con transiciones suaves
+- Navegación clara y accesible
+
+## Elementos de UI
+```css
+/* Botones */
+.btn-primary {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Tarjetas */
+.card {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Navegación */
+.nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+```
+
+## Animaciones y Transiciones
+- Transiciones suaves (0.3s ease)
+- Animaciones sutiles al hacer scroll
+- Efectos de hover elegantes
+- Evitar animaciones excesivas o distractivas
+
+## Responsive Design
+- Diseño mobile-first
+- Breakpoints principales:
+  - Móvil: < 768px
+  - Tablet: 768px - 1024px
+  - Desktop: > 1024px
+- Mantener la legibilidad en todos los dispositivos
+
+## Accesibilidad
+- Contraste de colores WCAG 2.1 AA
+- Textos legibles (mínimo 16px)
+- Alt text en todas las imágenes
+- Navegación por teclado
+- Estructura semántica HTML
+
+## Performance
+- Optimizar imágenes
+- Minimizar CSS y JavaScript
+- Lazy loading para imágenes
+- Código limpio y eficiente
+
+## SEO
+- Estructura HTML semántica
+- Meta tags completos
+- URLs amigables
+- Sitemap.xml
+- robots.txt
+
+## Mantenimiento
+- Código comentado y documentado
+- Estructura de archivos organizada
+- Nombres de clases consistentes
+- Variables CSS para fácil personalización 
