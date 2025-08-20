@@ -179,6 +179,35 @@
                 </form>
             </div>
         </section>
+
+        <!-- Widget de Chat IA -->
+        <div class="chat-float-button" id="chatFloatButton">
+            <i class="fas fa-robot"></i>
+            <span class="chat-tooltip">Chat con IA</span>
+        </div>
+
+        <!-- Modal del Chat -->
+        <div class="chat-modal" id="chatModal">
+            <div class="chat-modal-content">
+                <div class="chat-header">
+                    <h3><i class="fas fa-robot"></i> Asistente IA</h3>
+                    <button class="chat-close-btn" id="chatCloseBtn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <p>¡Hola! Soy tu asistente de IA. ¿En qué puedo ayudarte hoy?</p>
+                    </div>
+                </div>
+                <div class="chat-input-container">
+                    <input type="text" id="chatInput" placeholder="Escribe tu mensaje aquí..." class="chat-input">
+                    <button id="sendButton" class="chat-send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
