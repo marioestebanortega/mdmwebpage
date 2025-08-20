@@ -70,7 +70,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const addUserMessage = (text) => {
         const messageDiv = document.createElement('div');
         messageDiv.className = 'message user-message';
-        messageDiv.innerHTML = `<p>${text}</p>`;
+        
+        // Procesar Markdown si existe
+        if (text.includes('**') || text.includes('*') || text.includes('`') || text.includes('#') || text.includes('-') || text.includes('[')) {
+            messageDiv.innerHTML = `<div class="markdown-content">${marked.parse(text)}</div>`;
+        } else {
+            messageDiv.innerHTML = `<p>${text}</p>`;
+        }
+        
         chatMessages.appendChild(messageDiv);
         chatMessages.scrollTop = chatMessages.scrollHeight;
     };
@@ -79,7 +86,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const addBotMessage = (text) => {
         const messageDiv = document.createElement('div');
         messageDiv.className = 'message bot-message';
-        messageDiv.innerHTML = `<p>${text}</p>`;
+        
+        // Procesar Markdown si existe
+        if (text.includes('**') || text.includes('*') || text.includes('`') || text.includes('#') || text.includes('-') || text.includes('[')) {
+            messageDiv.innerHTML = `<div class="markdown-content">${marked.parse(text)}</div>`;
+        } else {
+            messageDiv.innerHTML = `<p>${text}</p>`;
+        }
+        
         chatMessages.appendChild(messageDiv);
         chatMessages.scrollTop = chatMessages.scrollHeight;
     };

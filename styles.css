@@ -1104,3 +1104,145 @@ body {
         display: none;
     }
 } 
+
+/* Estilos para Markdown en el chat */
+.message p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.message .markdown-content {
+    line-height: 1.5;
+}
+
+.message .markdown-content h1,
+.message .markdown-content h2,
+.message .markdown-content h3,
+.message .markdown-content h4,
+.message .markdown-content h5,
+.message .markdown-content h6 {
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: inherit;
+}
+
+.message .markdown-content h1 { font-size: 1.1rem; }
+.message .markdown-content h2 { font-size: 1rem; }
+.message .markdown-content h3 { font-size: 0.95rem; }
+.message .markdown-content h4 { font-size: 0.9rem; }
+.message .markdown-content h5 { font-size: 0.85rem; }
+.message .markdown-content h6 { font-size: 0.8rem; }
+
+.message .markdown-content p {
+    margin: 0.3rem 0;
+}
+
+.message .markdown-content ul,
+.message .markdown-content ol {
+    margin: 0.3rem 0;
+    padding-left: 1.2rem;
+}
+
+.message .markdown-content li {
+    margin: 0.2rem 0;
+}
+
+.message .markdown-content code {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 0.3rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+}
+
+.message .markdown-content pre {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    overflow-x: auto;
+    margin: 0.5rem 0;
+}
+
+.message .markdown-content pre code {
+    background: none;
+    padding: 0;
+}
+
+.message .markdown-content blockquote {
+    border-left: 3px solid rgba(255, 255, 255, 0.3);
+    margin: 0.5rem 0;
+    padding-left: 0.8rem;
+    font-style: italic;
+    opacity: 0.9;
+}
+
+.message .markdown-content a {
+    color: inherit;
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+.message .markdown-content a:hover {
+    opacity: 1;
+}
+
+.message .markdown-content strong {
+    font-weight: 600;
+}
+
+.message .markdown-content em {
+    font-style: italic;
+}
+
+.message .markdown-content table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0.5rem 0;
+    font-size: 0.85rem;
+}
+
+.message .markdown-content th,
+.message .markdown-content td {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.3rem 0.5rem;
+    text-align: left;
+}
+
+.message .markdown-content th {
+    background: rgba(255, 255, 255, 0.1);
+    font-weight: 600;
+}
+
+/* Estilos específicos para mensajes del bot con Markdown */
+.bot-message .markdown-content {
+    color: var(--white);
+}
+
+.bot-message .markdown-content code {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.bot-message .markdown-content pre {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.bot-message .markdown-content blockquote {
+    border-left-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Estilos específicos para mensajes del usuario con Markdown */
+.user-message .markdown-content {
+    color: var(--white);
+}
+
+.user-message .markdown-content code {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.user-message .markdown-content pre {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.user-message .markdown-content blockquote {
+    border-left-color: rgba(255, 255, 255, 0.4);
+} 
