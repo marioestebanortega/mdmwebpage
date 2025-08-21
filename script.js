@@ -157,3 +157,86 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 }); 
+
+// Funcionalidad del formulario de contacto
+document.addEventListener('DOMContentLoaded', function() {
+    const contactForm = document.getElementById('contactForm');
+    const contactMessage = document.getElementById('contactMessage');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            // Obtener datos del formulario
+            const formData = new FormData(contactForm);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const message = formData.get('message');
+            
+            // Validar que todos los campos estén llenos
+            if (!name || !email || !message) {
+                showContactMessage('Por favor, completa todos los campos.', 'error');
+                return;
+            }
+            
+            // Mostrar estado de envío
+            const submitButton = contactForm.querySelector('.btn-submit');
+            const originalText = submitButton.textContent;
+            submitButton.textContent = 'Enviando...';
+            submitButton.disabled = true;
+            
+            try {
+                // Enviar datos al webhook
+                const response = await fetch('https://n8n.mdmsolutions.co/webhook/5d02c33c-9d62-4133-be0a-8e247f2186c6', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        name: name,
+                        email: email,
+                        message: message,
+                        type: 'contact_form',
+                        sessionId: 'contact-' + Math.random().toString(36).substr(2, 9)
+                    })
+                });
+                
+                if (response.ok) {
+                    // Mostrar mensaje de éxito
+                    showContactMessage('Mensaje enviado correctamente, nos contactaremos lo más pronto posible.', 'success');
+                    
+                    // Limpiar formulario
+                    contactForm.reset();
+                    
+                    // Enviar evento a Google Analytics
+                    if (typeof gtag !== 'undefined') {
+                        gtag('event', 'contact_form_submitted', {
+                            'event_category': 'engagement',
+                            'event_label': 'contact_form'
+                        });
+                    }
+                } else {
+                    throw new Error('Error en el servidor');
+                }
+            } catch (error) {
+                console.error('Error al enviar formulario:', error);
+                showContactMessage('Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.', 'error');
+            } finally {
+                // Restaurar botón
+                submitButton.textContent = originalText;
+                submitButton.disabled = false;
+            }
+        });
+    }
+    
+    // Función para mostrar mensajes del formulario
+    function showContactMessage(message, type) {
+        contactMessage.textContent = message;
+        contactMessage.className = `contact-message ${type} show`;
+        
+        // Ocultar mensaje después de 5 segundos
+        setTimeout(() => {
+            contactMessage.classList.remove('show');
+        }, 5000);
+    }
+}); 
