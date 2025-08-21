@@ -459,6 +459,23 @@ body {
     color: var(--accent-color);
 }
 
+/* Estilos específicos para Telegram */
+.social-links a[aria-label="Telegram"]:hover {
+    color: #0088cc; /* Color oficial de Telegram */
+}
+
+.social-links a[aria-label="LinkedIn"]:hover {
+    color: #0077b5; /* Color oficial de LinkedIn */
+}
+
+.social-links a[aria-label="Twitter"]:hover {
+    color: #1da1f2; /* Color oficial de Twitter */
+}
+
+.social-links a[aria-label="Email"]:hover {
+    color: var(--accent-color);
+}
+
 .footer-bottom {
     text-align: center;
     padding-top: 2rem;
