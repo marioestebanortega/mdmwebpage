@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Permitir indexación de todas las páginas principales
+Allow: /index.html
+Allow: /styles.css
+Allow: /script.js
+
+# Permitir acceso a recursos estáticos
+Allow: /favicon.svg
+Allow: /favicon.png
+Allow: /apple-touch-icon.png
+
+# Sitemap para mejor indexación
+Sitemap: https://mdm-web-26b5e.web.app/sitemap.xml
+
+# Crawl-delay para ser respetuoso con el servidor
+Crawl-delay: 1
+
+# No bloquear nada específico
+# Disallow: /admin/
+# Disallow: /private/
