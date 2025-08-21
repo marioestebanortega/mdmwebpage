@@ -187,7 +187,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
             try {
                 // Enviar datos al webhook
-                const response = await fetch('https://n8n.mdmsolutions.co/webhook/5d02c33c-9d62-4133-be0a-8e247f2186c6', {
+                const response = await fetch('https://n8n.mdmsolutions.co/webhook/bb7cca2b-d4e1-45f1-8079-39be90430bb2', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
